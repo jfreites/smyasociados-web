@@ -1,0 +1,140 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Contacto">
+    <div class="no-bottom no-top" id="content">
+        <div id="top"></div>
+        <!-- section begin -->
+        <section id="subheader" class="jarallax text-white">
+            <img
+                src="/assets/images/background/subheader2.jpg"
+                class="jarallax-img"
+                alt=""
+            />
+            <div class="center-y relative text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h1>Contáctanos</h1>
+                            <p>Conocimientos, experiencia y resultados</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section close -->
+        <section aria-label="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- none -->
+                    </div>
+                    <div class="col-md-4">
+                        <img
+                            src="/assets/images/misc/p2.jpg"
+                            alt=""
+                            class="img-fluid mb30"
+                        />
+                        <h3>Oficina CDMX</h3>
+                        <address class="s1">
+                            <span
+                                ><i class="id-color fa fa-map-marker fa-lg"
+                                ></i>Calle Guanábana, Número 242, Oficina B,
+                                Colonia Nueva Santa María, Alcaldía
+                                Azcapotzalco, Código Postal 02800 en la Ciudad
+                                de México</span
+                            >
+                            <span
+                                ><i class="id-color fa fa-phone fa-lg"></i>55
+                                5025 1174</span
+                            >
+                            <span
+                                ><i class="id-color fa fa-book fa-lg"></i>De
+                                lunes a viernes de las 9:00 a las 19:00 horas</span
+                            >
+                            <span
+                                ><i class="id-color fa fa-envelope-o fa-lg"
+                                ></i><a href="mailto:contact@example.com"
+                                    >contacto.asistencia@smyasociados.com.mx</a
+                                ></span
+                            >
+                        </address>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- none -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section aria-label="section" class="text-light" data-bgcolor="#111111">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 mb-sm-30 text-center">
+                        <h3>¿Tienes alguna pregunta?</h3>
+                        <form
+                            name="contactForm"
+                            id="contact_form"
+                            class="form-border"
+                            method="post"
+                            action="#"
+                        >
+                            <div class="field-set">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    class="form-control"
+                                    placeholder="Tu Nombre"
+                                />
+                            </div>
+                            <div class="field-set">
+                                <input
+                                    type="text"
+                                    name="email"
+                                    id="email"
+                                    class="form-control"
+                                    placeholder="Tu Email"
+                                />
+                            </div>
+                            <div class="field-set">
+                                <input
+                                    type="text"
+                                    name="phone"
+                                    id="phone"
+                                    class="form-control"
+                                    placeholder="Tu Teléfono"
+                                />
+                            </div>
+                            <div class="field-set">
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                    class="form-control"
+                                    placeholder="Tu Mensaje"></textarea>
+                            </div>
+                            <div class="spacer-half"></div>
+                            <div id="submit">
+                                <input
+                                    type="submit"
+                                    id="send_message"
+                                    value="Enviar"
+                                    class="btn btn-custom"
+                                />
+                            </div>
+                            <div id="mail_success" class="success">
+                                Tu mensaje ha sido enviado.
+                            </div>
+                            <div id="mail_fail" class="error">
+                                Lo sentimos, ocurrió un problema enviando tu
+                                mensaje.
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-4"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+</Layout>

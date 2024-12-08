@@ -1,0 +1,290 @@
+---
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+
+import logoAlt from "../styles/images/logo-light.png";
+import logo from "../styles/images/logo.png";
+
+import "../styles/css/bootstrap.min.css";
+import "../styles/css/animate.css";
+import "../styles/css/owl.carousel.css";
+import "../styles/css/owl.theme.css";
+import "../styles/css/owl.transitions.css";
+import "../styles/css/magnific-popup.css";
+import "../styles/css/jquery.countdown.css";
+
+import "../styles/css/style.css";
+import "../styles/css/colors/scheme-default.css";
+import "../styles/css/coloring.css";
+
+import "../styles/revolution/css/settings.css";
+import "../styles/revolution/css/layers.css";
+import "../styles/revolution/css/navigation.css";
+---
+
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>{title} - SM y Asociados</title>
+        <link
+            rel="icon"
+            href="images/icon.png"
+            type="image/gif"
+            sizes="16x16"
+        />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta
+            content="Justica - Lawyer and Attorney Website Template"
+            name="description"
+        />
+        <meta content="" name="keywords" />
+        <meta content="" name="author" />
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div id="topbar" class="topbar-noborder">
+                <div class="container">
+                    <div class="topbar-left sm-hide">
+                        <span class="topbar-widget tb-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </span>
+                    </div>
+                    <div class="topbar-right">
+                        <div class="topbar-right"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- header begin -->
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="de-flex sm-pt10">
+                                <div class="de-flex-col">
+                                    <!-- logo begin -->
+                                    <div id="logo">
+                                        <a href="/">
+                                            <img
+                                                alt=""
+                                                class="logo"
+                                                src={logoAlt.src}
+                                            />
+                                            <img
+                                                alt=""
+                                                class="logo-2"
+                                                src={logo.src}
+                                            />
+                                        </a>
+                                    </div>
+                                    <!-- logo close -->
+                                </div>
+                                <div class="de-flex-col header-col-mid">
+                                    <!-- mainmenu begin -->
+                                    <ul id="mainmenu">
+                                        <li><a href="/">Inicio</a></li>
+
+                                        <li>
+                                            <a href="/areas-de-practica"
+                                                >Áreas de Práctica</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="/contacto">Contacto</a>
+                                        </li>
+                                    </ul>
+                                    <!-- mainmenu close -->
+                                </div>
+                                <div class="de-flex-col">
+                                    <div class="h-phone md-hide">
+                                        <span>¿Necesitas Ayuda?</span><i
+                                            class="fa fa-phone"></i>
+                                        55 5025 1174
+                                    </div>
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- header close -->
+            <!-- content begin -->
+            <slot />
+            <!-- content close -->
+            <a href="#" id="back-to-top"></a>
+            <!-- footer begin -->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="widget">
+                                <a href="/"
+                                    ><img
+                                        alt=""
+                                        class="img-fluid mb20"
+                                        src="assets/images/logo-light.png"
+                                    /></a
+                                >
+                                <address class="s1">
+                                    <span
+                                        ><i
+                                            class="id-color fa fa-map-marker fa-lg"
+                                        ></i>Calle Guanábana, Número 242,
+                                        Oficina B, Colonia Nueva Santa María,
+                                        Alcaldía Azcapotzalco, C.P. 02800,
+                                        Ciudad de México</span
+                                    >
+                                    <span
+                                        ><i class="id-color fa fa-phone fa-lg"
+                                        ></i>55 5025 1174</span
+                                    >
+                                    <span
+                                        ><i
+                                            class="id-color fa fa-envelope-o fa-lg"
+                                        ></i><a
+                                            href="mailto:contact@example.com"
+                                            >contacto.asistencia@smyasociados.com.mx</a
+                                        ></span
+                                    >
+                                    <!-- <span><i class="id-color fa fa-file-pdf-o fa-lg"></i><a href="#">Download
+                                        Brochure</a></span> -->
+                                </address>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="id-color mb20">Áreas de Práctica</h4>
+                            <ul class="ul-style-2">
+                                <li>Derecho Civil</li>
+                                <li>Derecho laboral</li>
+                                <li>Derecho mercantil</li>
+                                <li>Derecho familiar</li>
+                                <li>Derecho empresarial y corporativo</li>
+                                <li>Derecho migratorio</li>
+                                <li>Derecho administativo</li>
+                                <li>Seguridad social</li>
+                                <li>Propiedad intelectual</li>
+                                <li>
+                                    Protección Federal al Consumidor (PROFECO)
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <h4 class="id-color">Nuestros Servicios</h4>
+                            <p>
+                                Regístrate para recibir el catálogo de servicios
+                                con el que contamos en tu bandeja de entrada.
+                            </p>
+                            <form
+                                action="#"
+                                class="row"
+                                id="form_subscribe"
+                                method="post"
+                                name="form_subscribe"
+                            >
+                                <div class="col text-center">
+                                    <input
+                                        class="form-control"
+                                        id="name_1"
+                                        name="name_1"
+                                        placeholder="ingresa tu e-mail"
+                                        type="text"
+                                    />
+                                    <a href="#" id="btn-submit"
+                                        ><i class="fa fa-long-arrow-right"
+                                        ></i></a
+                                    >
+                                    <div class="clearfix"></div>
+                                </div>
+                            </form>
+                            <div class="spacer-10"></div>
+                            <small
+                                >Tu e-mail está seguro con nosotros. No enviamos
+                                spam.</small
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="subfooter">
+                    <div class="container">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-6">
+                                &copy; Copyright {new Date().getFullYear()} - SM
+                                y Asociados
+                            </div>
+                            <div class="col-lg-6 text-lg-end">
+                                <div class="social-icons">
+                                    <a href="#"
+                                        ><i class="fa fa-facebook fa-lg"></i></a
+                                    >
+                                    <a href="#"
+                                        ><i class="fa fa-twitter fa-lg"></i></a
+                                    >
+                                    <a href="#"
+                                        ><i class="fa fa-linkedin fa-lg"></i></a
+                                    >
+                                    <a href="#"
+                                        ><i class="fa fa-pinterest fa-lg"
+                                        ></i></a
+                                    >
+                                    <a href="#"
+                                        ><i class="fa fa-rss fa-lg"></i></a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- footer close -->
+            <div id="preloader">
+                <div class="spinner">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Javascript Files
+    ================================================== -->
+    </body>
+</html>
+<style is:global>
+    /* :root {
+        --title-font: "Jost";
+        --title-font-color: #111111;
+        --body-font: "Jost", Arial;
+        --body-font-size: 16px;
+        --header-s2-top: 30px;
+        --bg-dark-1: #111111;
+        --bg-dark-1-rgb: 17, 17, 17;
+        --white: #ffffff;
+        --white-rgb: 255, 255, 255;
+    } */
+</style>
+<script is:inline src="/js/jquery.min.js"></script>
+<script is:inline src="/js/bootstrap.min.js"></script>
+<script is:inline src="/js/wow.min.js"></script>
+<script is:inline src="/js/jquery.isotope.min.js"></script>
+<script is:inline src="/js/easing.js"></script>
+<script is:inline src="/js/owl.carousel.js"></script>
+<script is:inline src="/js/validation.js"></script>
+<script is:inline src="/js/jquery.magnific-popup.min.js"></script>
+<script is:inline src="/js/enquire.min.js"></script>
+<script is:inline src="/js/jquery.stellar.min.js"></script>
+<script is:inline src="/js/jquery.plugin.js"></script>
+<script is:inline src="/js/typed.js"></script>
+<script is:inline src="/js/jarallax.js"></script>
+<script is:inline src="/js/jquery.countTo.js"></script>
+<script is:inline src="/js/jquery.countdown.js"></script>
+<script is:inline src="/js/typed.js"></script>
+<script is:inline src="/js/jarallax.js"></script>
+<script is:inline src="/js/mdb.min.js"></script>
+<script is:inline src="/js/designesia.js"></script>
